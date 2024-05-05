@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Task Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+        <br>
+      <div class="buy-container row justify-content-between mb-4">
+        <h2 id="msg">Task Tracker</h2>
+        <button id="logout" class="btn btn-primary">Log Out</button>
+      </div>
+      <form id="taskForm">
+        <div class="form-group p-2">
+          <label for="task">Task</label>
+          <input type="text" class="form-control" id="task" required />
+        </div>
+        <div class="form-group p-2">
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+      </form>
+
+        <ul class="list-group" id="tasks">
+          <!-- Task will be added dynamically here -->
+        </ul>
+      </div>
+
+      <div id="paginationDiv" class="m-5 d-flex justify-content-center"></div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script type="module" src="task.js"></script>
+</html>
+
+
+
